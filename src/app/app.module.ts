@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
+import { DataService } from './data.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -54,7 +55,7 @@ import { FormValidationComponent } from './form-validation/form-validation.compo
       apiKey: 'AIzaSyAuJgMRc84UWwMRlXpmR4ms9CECA3nG6Co'
     })
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
